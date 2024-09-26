@@ -1,0 +1,38 @@
+.callout {
+    box-sizing: border-box;
+	max-width: 400px;
+    max-height: auto;
+    margin: 15px;
+    border: 10px rgb(15, 68, 111);
+    padding: 50px solid rgb(15,68,111);
+    background-color: rgb(15, 68, 111);
+    color: white;
+}
+
+.callout img { 
+	float: right;
+    margin: 20px;  
+    border: 1.75px solid black;
+    padding: 2.5px;
+    background-color: lightgray;
+    width: 135px;
+    height: auto; 
+    box-sizing: border-box;
+}
+
+blockquote {
+    box-sizing: border-box;
+    padding-top: 10px;
+	margin: 2px 20px;
+}
+
+cite {
+    box-sizing: border-box;
+	display: block;   
+    border-top: 1px dotted white;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    margin: 20px;
+    text-align: right;
+    font-size: small;
+}

@@ -1,0 +1,112 @@
+Web Development 
+
+HTML
+It's a markup language that can be written in any simple text editor. You doesn't need a program to write your html code.
+It is a markup language because it uses tags to say how the text between them should appear in the page.
+
+ Notice that tags and attribute names are lowercase. 
+ HTML is not case sensitive but it’s good practice to leave them lowercase.
+ 
+ We have TAGS, ATTRIBUTES, VALUES and CONTENT.
+ <tag atrributes="values">Content</tag>
+
+Hints about content:
+<h1> = main heading
+<a> = link
+<img> = images
+
+
+Basic Elements of HTML Language
+
+<!DOCTYPE html> 
+This element is telling which version of html is being used (document type declaration).
+
+<html>
+This element is the container for all the other html tags.
+It can store an atribute called language (lang) that is organized: <html lang="pt-BR"></html>
+
+
+
+  <head>
+  This element contains elements that tell about the page rather than what's on the page.
+	
+	<meta>
+	It is organized with only the opnening tag (VOID ELEMENT). Meta tags can contain some attributes like:
+	<meta charset="utf-8">
+	Charset attribute tells computers how to interpret digital data into letters, numbers and symbols. It is standard to use utf-8. 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	This viewport element ensures the page renders at the width of viewport, preventing mobile browsers from rendering pages wider than the viewport and then shrinking them down.
+
+	<title>
+	This element inside of <head> contains a text that will show up in the title bar or tab at the top of the browse window (not in the page itself).
+
+
+
+  <body>
+  The body tag is where all the elements that make up the page will go
+	
+	<header>
+	This element contains the things that will appear in the top of the page (the header). These things will remain the same from one page to another.
+	
+		<nav>
+		This element contains the navigation elements (links) that will appear in the header. Usually, they contain "a elements".
+		   
+		   <a> elements
+		   They are hyperlinks contained in the navigation elements. When the user clicks on the text or content between the <a> tags, it will take them somewhere else.
+		   Additional information is needed inside the opening tag to specify where to send the user once they click the content, this is called an attribute. Attributes usually come in name/value pairs, with the name followed by an equal sign and then the value in quotes.
+		   Example:
+		   <a href="index.html">Home</a>
+		   In this example, the opening tag has the attribute "href", and it has the value "index.html".
+		   After the opening tag, we have the content of this link: the text "Home" will be displayed.
+		   Something about hyperlinks:
+		   The # value for the Home page href anchor link refers to the current page and will not reload the page.
+		   	
+	<main>
+	This element contains the things that will be unique to each page of the website.
+		<p>
+		This is a paragraph element. We write the text content between the opening and closing tags. 
+	
+	
+	
+		<img>
+		To the images, we only need the opening tag, because the content is handled by the attributes. (VOID ELEMENT)
+		Example:
+		<img src="voyager.jpg" alt="docking station">
+		This image tag has two attributes: src (source) and alt (alternative text).
+		Source = where the image is located
+		Alternative text = this will be the alternative for the image if there is a screen reader or if the image is not available.
+	
+	<footer>
+	This element contains the things that will appear in the bottom of the page. These things will remain the same from one page to another.
+
+
+
+
+
+IMPORTANT!
+What is the basic anatomy of an HTML document that is required for all pages in this course?
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+  </body>
+</html>
+
+
+about:
+(VOID ELEMENT)
+
+
+
+
+
+
+
+
+
+
+
