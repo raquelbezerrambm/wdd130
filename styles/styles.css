@@ -22,8 +22,8 @@ main img {
   background-color: white;
   margin: 20px;
 }
-main p {
-  padding: 10px;
+p {
+  padding: 0;
 }
 
 main {
