@@ -19,6 +19,7 @@ blockquote {
     margin: 0;
 }
 
+/*
 cite {
     display: block;   
     border-top: 1px dotted white;
@@ -26,3 +27,6 @@ cite {
     text-align: right;
     font-size: smaller;
 }
+*/
+
+/* This is a comment line */
