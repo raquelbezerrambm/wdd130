@@ -7,7 +7,7 @@
 :root {
   --main-color: #244560;
   --secondary-color: white;
-  --img-margin: 20px
+  --img-margin: 20px;
 }
 
 nav {
@@ -34,7 +34,7 @@ main img {
   padding: 4px;
   background-color: var(--secondary-color);
   margin: var(--img-margin);
-  float:right
+  float: right;
 }
 
 p {
@@ -48,7 +48,7 @@ main {
 
 ul a {
   color: var(--secondary-color);
-  margin: 1rem
+  margin: 1rem;
 }
 
 ul h3 {
