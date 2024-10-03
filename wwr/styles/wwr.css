@@ -1,0 +1,26 @@
+/* 
+Color Pallette
+
+primary-color: rgb (28, 63, 128) - Marian Blue
+secondary-color: rgb (254, 254, 254) - white
+accent1-color: rgb (147, 165, 197) - Vista Blue
+accent2-color: rgb (19, 18, 0) - Smoky black
+
+
+Typography
+
+heading-font: Lilita One
+text-font: Open Sans
+
+    Code copied from Google fonts (embeding Lilita One):
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+font-family declaration (following example given in Introduction to the WWR Website):
+h1, h2, h3, h4, h5, h6 { font-family: "Lilita One", sans-serif}
+*/
+
