@@ -87,6 +87,12 @@ div.hero {
     font-size: larger;
 }
 
+.adventure img{
+    width: 450px;
+    display: inline;
+}
+
+
 footer nav{
     text-decoration: none;
     width: 3rem;
