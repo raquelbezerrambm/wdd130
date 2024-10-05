@@ -26,7 +26,7 @@ header {
     background-color: var(--accent1-color);
     border-bottom: 10px solid var(--primary-color);
     text-align: center;
-    padding-bottom: 6px;
+    padding-bottom: 9px;
 }
 
 header a{
