@@ -50,24 +50,28 @@ header img {
     grid-column: 2/ span 2;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+div.hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 3fr 2fr;
+    justify-content: center;
+    align-items: center;
 }
 
-div.hero {
-    position: relative;
+.heroimage {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    justify-self: center;
+    min-width: 100%;
 }
 
 .hero h1 {
-    display: block;
-    position: absolute;
-    top: 40px;
-    left: 200px;
     color: var(--primary-color);
     font-size: 5rem;
     text-shadow: 0 0 20px var(--secondary-color);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
 }
 
 .hero article img {
@@ -77,18 +81,19 @@ div.hero {
 }
 
 .hero article {
-    position: absolute;
-    top: 150px;
     margin-left: 50px;
     margin-right: 50px;
     background-color: var(--primary-color);
     opacity: 0.9;
     box-shadow: 0 0 40px rgb(254, 254, 254);
+    grid-column: 1/4;
+    grid-row: 2/3;
+    font-size: 1.5rem;
 }
 
 .hero article p {
     color: var(--secondary-color);
-    text-align: center;
+    text-align: center; 
 }
 
 .history {
@@ -98,7 +103,7 @@ div.hero {
     border: 1rem solid var(--primary-color);
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 6rem 4fr;
+    grid-template-rows: 5.5rem 4fr;
 }
 
 .history h2{
@@ -116,6 +121,7 @@ div.hero {
     border: 4px solid var(--primary-color);
     padding: 2px;
     width:fit-content;
+    margin-bottom: 1rem;
 
 }
 
@@ -124,7 +130,7 @@ div.hero {
     font-size: larger;
 }
 
-.adventure{
+section.adventure{
     background-color: var(--secondary-color);
     margin: 1rem;
     border: 1rem solid var(--accent1-color);
@@ -142,6 +148,13 @@ div.hero {
     grid-column: 1 / span 5;
 }
 
+div.adventureimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: 1/6;
+}
+
 .adventure figcaption {
     color: var(--primary-color);
     text-align: center;
@@ -152,12 +165,10 @@ div.hero {
 }
 
 .adventure img{
-    display: block;
-    max-width: 20rem;
+    max-width: 17rem;
     height: auto;
     border: 4px solid var(--primary-color);
     padding: 2px;
-    grid-column: span 1;
 }
 
 footer {
