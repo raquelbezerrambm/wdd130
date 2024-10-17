@@ -36,11 +36,19 @@ form {
 
 fieldset {
     display: grid;
-    grid-gap: .5rem;
+    grid-gap: 0.5rem;
     margin: 1rem;
     border: 2.5px solid rgba(0,0,0,0.2);
     padding: 1rem;
     border-radius: 0.4rem;
+}
+
+input, button, select, textarea{
+    font-family: 
+      'Times New Roman', 
+      Times, 
+      serif;
+    font-size: 1.1rem;
 }
 
 legend {
@@ -51,6 +59,45 @@ legend {
 }
 
 .contact {
-
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 
+label{
+    text-align: right;
+    align-self: center;
+}
+
+.questions {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+}
+
+#browser{
+    width: 100px;
+    height: 2rem;
+    align-self: center;
+}
+
+input[type="checkbox"] { 
+    height: 1.7rem;
+    align-self: center;
+    justify-self: left;
+}
+
+textarea {
+    grid-row: 4;
+    grid-column: span 2;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.7rem;
+    width: 15rem;
+    justify-self: center;
+}
