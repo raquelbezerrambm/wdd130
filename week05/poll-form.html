@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 130 | HTML Form - User Poll</title>
     <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,390;1,390&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,16 +15,16 @@
     </header>
     <main>
         <form>
-            <fieldset>
+            <fieldset class="contact">
                 <legend>Contact Information</legend> 
 
                 <label for="fullname"></label>Full Name:
-                <input type="text" id="fullname" name="fullname"><br>
+                <input type="text" id="fullname" name="fullname">
                     
                 <label for="useremail">Email:</label>
                 <input type="email" id="useremail" name="useremail">
             </fieldset>
-            <fieldset>
+            <fieldset class="questions">
                 <legend>Questions</legend>
 
                 <label for="browser">What is your favorite browser?</label>
@@ -31,12 +34,12 @@
                     <option value="edge">Edge</option>
                     <option value="firefox">Firefox</option>
                     <option value="other">Other</option>
-                </select><br>
+                </select>
 
                 <label for="pet">Do you have a household pet? </label>
-                <input type="checkbox" id="pet" name="pet"><br><br>
+                <input type="checkbox" id="pet" name="pet">
 
-                <label for="places">List the places you have lived:</label><br>
+                <label for="places">List the places you have lived:</label>
                 <textarea id="places" name="places" rows="4" placeholder="Natal, Teresina, Mossoró, Recife, Manaus, Fortaleza, Socorro, Maceió, Aracaju"></textarea>
             </fieldset>
             <button type="submit">Submit Poll</button>

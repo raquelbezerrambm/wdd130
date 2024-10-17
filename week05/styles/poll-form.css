@@ -1,16 +1,56 @@
-fieldset {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  width: 150px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+    font-family: "Open Sans", serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    font-family: "PT Serif", serif;
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 4px solid navy;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 2.5px solid rgba(0,0,0,0.2);
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+legend {
+    font-family: "PT Serif", serif;
+    color: navy;
+    padding: 0.5rem;
+    font-weight: bolder;
+}
+
+.contact {
+
 }
 
