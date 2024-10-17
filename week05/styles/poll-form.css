@@ -110,7 +110,12 @@ button:focus{
 
 footer {
     margin: 0 auto;
+    margin-top: 1rem;
+    padding-top: 0.3rem;
+    border-top: 1.5px solid navy;
     width: 650px;
+    color: navy;
+    font-family: "PT Serif", serif;
 }
 
 footer p {
