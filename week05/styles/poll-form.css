@@ -82,7 +82,6 @@ label{
 input[type="checkbox"] { 
     height: 1.7rem;
     align-self: center;
-    justify-self: left;
 }
 
 textarea {
@@ -94,10 +93,26 @@ button {
     margin: 1rem;
     background-color: navy;
     color: #fff;
-    border: none;
+    border: 2px solid navy;
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.7rem;
     width: 15rem;
     justify-self: center;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus{
+    background: white;
+    color: navy;
+}
+
+footer {
+    margin: 0 auto;
+    width: 650px;
+}
+
+footer p {
+    text-align: center;
 }
