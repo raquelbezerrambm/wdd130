@@ -133,7 +133,6 @@ div.hero {
     padding: 2px;
     width:fit-content;
     margin-bottom: 1rem;
-
 }
 
 .history p {
@@ -219,11 +218,16 @@ h2{
 .intro p,
 .form p {
     font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.intro h1 {
+    color: var(--primary-color);
 }
 
 .headquarters {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px 2fr 3fr;
     grid-template-rows: 1fr 0.3fr 1fr 1fr 1fr;
     margin: 1rem;
     padding: 1rem;
@@ -233,11 +237,15 @@ h2{
 
 iframe{
     grid-row: 1/span 5;
-    grid-column: 2/ 3;
+    grid-column: 3/ span 1;
+    align-self: center;
+    justify-self: center;
 }
 
 .headquarters h2 {
     color: var(--secondary-color);
+    grid-column: 2/3;
+    grid-row: 1/2;
     align-self: end;
 }
 
@@ -245,4 +253,52 @@ iframe{
     color: var(--accent2-color);
     font-size: 1.5rem;
     text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.headquarters p {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    align-self: center;
+    grid-column: 2/3;
+}
+
+.team {
+    display: grid;
+    grid-template-rows: 5rem 1fr 1fr;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1rem solid var(--accent1-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.ateam {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ateam figure {
+    justify-self: center;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: larger;
+    font-weight: bold;
+}
+
+.ateam img {
+    width: 300px;
+    border: 10px solid var(--accent1-color);
+}
+
+.bteam {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.bteam img{
+    width: 200px;
+    align-self: center;
+    border: 5px solid var(--accent1-color);
 }
