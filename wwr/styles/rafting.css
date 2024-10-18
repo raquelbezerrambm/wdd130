@@ -1,3 +1,4 @@
+/* All Pages */
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +9,21 @@
     --secondary-color: rgb(254, 254, 254); /* White */
     --accent1-color: rgb(126, 148, 185); /* Vista Blue */
     --accent2-color: rgb(19, 18, 0); /* Smoky Black */
+    margin: 0 auto;
+    width: 1400px;
 }
 
 h1, h2, h3, h4, h5, h6 { 
     font-family: "Lilita One", sans-serif;
     font-weight: lighter;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 p {
@@ -49,7 +60,9 @@ header img {
     width: 10rem;
     grid-column: 2/ span 2;
 }
+/* -------------------------- */
 
+/* About Us Page */
 div.hero {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -67,7 +80,6 @@ div.hero {
 
 .hero h1 {
     color: var(--primary-color);
-    font-size: 5rem;
     text-shadow: 0 0 20px var(--secondary-color);
     grid-column: 2/3;
     grid-row: 1/2;
@@ -88,12 +100,12 @@ div.hero {
     box-shadow: 0 0 40px rgb(254, 254, 254);
     grid-column: 1/4;
     grid-row: 2/3;
-    font-size: 1.5rem;
 }
 
 .hero article p {
     color: var(--secondary-color);
-    text-align: center; 
+    text-align: center;
+    font-size: 1.5rem; 
 }
 
 .history {
@@ -109,7 +121,6 @@ div.hero {
 .history h2{
     color: var(--secondary-color); 
     margin: 1rem;
-    font-size: 3rem;
     text-shadow: 0 0 5px var(--primary-color);
     text-align: center;
     grid-column: span 5;
@@ -140,7 +151,6 @@ section.adventure{
 }
 
 .adventure h2 {
-    font-size: 3rem;
     text-align: center;
     color: var(--primary-color);
     margin-top: 1rem;
@@ -170,7 +180,10 @@ div.adventureimages {
     border: 4px solid var(--primary-color);
     padding: 2px;
 }
+/* --------------------------- */
 
+
+/* Footer All Pages */
 footer {
     background-color: var(--primary-color);
     display: flex;
@@ -192,4 +205,44 @@ footer nav{
 footer img {
     width: 3rem;
     display: inline;    
+}
+/* ------------------------ */
+
+/* Contact Us Page */
+.intro h1,
+.intro p,
+.form p, 
+h2{
+    text-align: center;
+}
+
+.intro p,
+.form p {
+    font-size: 1.5rem;
+}
+
+.headquarters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 1fr 1fr 1fr;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1rem solid var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+iframe{
+    grid-row: 1/span 5;
+    grid-column: 2/ 3;
+}
+
+.headquarters h2 {
+    color: var(--secondary-color);
+    align-self: end;
+}
+
+.headquarters h3{
+    color: var(--accent2-color);
+    font-size: 1.5rem;
+    text-align: center;
 }
