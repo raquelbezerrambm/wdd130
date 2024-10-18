@@ -43,10 +43,34 @@
 
       <div class="form">
         <h1>Send Us a Message</h1>
+        <p>Send us a message and we'll respond within 24 hours.</p>
 
         <form>
+          <label for="username">Name</label>
+          <input type="text" id="username" name="username" placeholder="Your name">
 
-          
+          <label for="useremail">Email</label>
+          <input type="text" id="useremail" name="useremail" placeholder="Your email adress">
+
+          <fieldset>
+            <legend>Purpose of Message</legend>
+            <input type="radio" id="general_inquiry" name="purpose" value="general_inquiry">
+            <label for="general_inquiry">General Inquiry</label>
+            <input type="radio" id="reservation_question" name="purpose" value="reservation_question">
+            <label for="reservation_question">Reservation Question</label>
+            <input type="radio" id="website_suggestion" name="purpose" value="website_suggestion">
+            <label for="website_suggestion">Website Suggestion</label>
+          </fieldset>
+
+          <label for="message">Message</label>
+          <input type="textarea" id="message" name="message" placeholder="Your message">
+
+          <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+          <input type="checkbox" id="subscribe" name="subscribe">
+
+          <button>
+            
+          </button>
         </form>
       </div>
     </main>
