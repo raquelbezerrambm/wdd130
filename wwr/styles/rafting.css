@@ -247,6 +247,8 @@ iframe{
     grid-column: 2/3;
     grid-row: 1/2;
     align-self: end;
+    text-shadow: 0 0 7px var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
 .headquarters h3{
@@ -285,6 +287,10 @@ iframe{
     background-color: var(--primary-color);
 }
 
+.team h2 {
+    text-shadow: 0 0 7px var(--accent1-color);
+}
+
 .ateam {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -313,3 +319,4 @@ iframe{
     align-self: center;
     border: 5px solid var(--accent1-color);
 }
+
