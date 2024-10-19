@@ -56,6 +56,12 @@ header a{
     grid-column: 5/ span 4;
 }
 
+header a:hover,
+header a:focus {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 header img {
     width: 10rem;
     grid-column: 2/ span 2;
