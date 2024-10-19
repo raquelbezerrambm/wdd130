@@ -74,11 +74,15 @@
         <p>Send us a message and we'll respond within 24 hours.</p>
 
         <form>
-          <label for="username">Name</label>
-          <input type="text" id="username" name="username" placeholder="Your name">
+          <div class="username">
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username" placeholder="Your name">
+          </div>
 
-          <label for="useremail">Email</label>
-          <input type="text" id="useremail" name="useremail" placeholder="Your email adress">
+          <div class="useremail">
+            <label for="useremail">Email</label>
+            <input type="text" id="useremail" name="useremail" placeholder="Your email adress">
+          </div>
 
           <fieldset>
             <legend>Purpose of Message</legend>
@@ -90,11 +94,15 @@
             <label for="website_suggestion">Website Suggestion</label>
           </fieldset>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your message"></textarea>
-
-          <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-          <input type="checkbox" id="subscribe" name="subscribe">
+          <div class="message">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
+          </div>
+          
+          <div class="checkbox">
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            <input type="checkbox" id="subscribe" name="subscribe" checked>
+          </div>
 
           <button type="submit">SEND</button>
         </form>
