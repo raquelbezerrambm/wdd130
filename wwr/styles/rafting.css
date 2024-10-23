@@ -481,6 +481,14 @@ button:focus{
 
 .homeform {
     grid-template-columns: 1fr;
+    max-width: 590px;
+    margin: 0 auto;
+    background-color: var(--accent1-color);
+}
+
+form.homeform {
+    border: 5px solid var(--primary-color);
+    grid-template-rows: 2fr 3fr 3fr 1.5fr;
 }
 
 .username.homeform {
@@ -501,8 +509,25 @@ button:focus{
     display: grid;
     width: 1400px;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .homegrid img {
-    width: 300px;
+    width: 350px;
+    padding: 2px;
+    margin: 0.5rem;
+    border: 3px solid var(--primary-color);
+    justify-self: center;
+}
+
+.offerings,
+.purpose {
+    display:grid;
+    grid-template-rows: 260px 4rem 1fr;
+}
+
+.offerings p {
+    grid-row: 3/4;
+    grid-column: 1/2;
 }
