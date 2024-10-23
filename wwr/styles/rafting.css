@@ -469,6 +469,7 @@ button:focus{
     width: 16rem;
     justify-self: center;
     align-self: start;
+    font-family: "Open Sans", serif, bold;
 }
 
 .explore:hover,
@@ -494,4 +495,14 @@ button:focus{
     grid-column: 1/2;
     display: grid;
     justify-content: center;
+}
+
+.homegrid {
+    display: grid;
+    width: 1400px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.homegrid img {
+    width: 300px;
 }
