@@ -75,6 +75,7 @@ div.hero {
     grid-template-rows: 2fr 3fr 2fr;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .heroimage {
@@ -87,7 +88,7 @@ div.hero {
 .hero h1 {
     color: var(--primary-color);
     text-shadow: 0 0 20px var(--secondary-color);
-    grid-column: 2/3;
+    grid-column: 1/4;
     grid-row: 1/2;
     justify-self: center;
 }
@@ -449,3 +450,30 @@ button:focus{
 
 
 /* Home Page */
+.hero.home h1{
+    grid-row: 2/3;
+    font-size: 7rem;
+    text-shadow: 0 0 15px var(--secondary-color);
+}
+
+.explore {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    padding: 10px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: 16rem;
+    justify-self: center;
+    align-self: start;
+}
+
+.explore:hover,
+.explore:focus{
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    
+}
