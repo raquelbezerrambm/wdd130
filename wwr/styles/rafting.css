@@ -477,3 +477,21 @@ button:focus{
     color: var(--secondary-color);
     
 }
+
+.homeform {
+    grid-template-columns: 1fr;
+}
+
+.username.homeform {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    justify-content: center;
+}
+
+.useremail.homeform {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: grid;
+    justify-content: center;
+}
