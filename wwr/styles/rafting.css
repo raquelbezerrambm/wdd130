@@ -569,3 +569,52 @@ form.homeform {
     color: var(--primary-color);
     font-size: 1.3rem;
 }
+
+/* Trips Page */
+
+.tripsgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tripsinfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    border: 5px solid var(--primary-color);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border: 5px solid var(--accent1-color);
+    margin: 1rem;
+}
+
+.info img {
+    width: 15rem;
+    order: -1;
+    padding: 2px;
+    margin: 10px;
+    border: 3px solid var(--accent1-color);
+    justify-self: end; 
+    align-self: center;
+}
+
+.info h2{
+    color: var(--primary-color);
+    margin: 1px;
+    justify-self: start;
+    align-self: center;
+}
+
+.info p {
+    grid-column: 1/3;
+    font-size: 1.5rem;
+    justify-self: center;
+    margin-top: 0;
+}
+
