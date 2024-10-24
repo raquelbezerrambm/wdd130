@@ -454,7 +454,11 @@ button:focus{
 .hero.home h1{
     grid-row: 2/3;
     font-size: 7rem;
-    text-shadow: 0 0 15px var(--secondary-color);
+    text-shadow:  
+    -2px -2px 5px var(--secondary-color),  /* Sombra para cima e esquerda */
+    2px -2px 5px var(--secondary-color),   /* Sombra para cima e direita */
+    -2px 2px 5px var(--secondary-color),   /* Sombra para baixo e esquerda */
+    2px 2px 5px var(--secondary-color);    /* Sombra para baixo e direita */;
 }
 
 .explore {
