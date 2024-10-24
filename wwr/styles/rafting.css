@@ -525,7 +525,7 @@ form.homeform {
     width: 350px;
     padding: 2px;
     margin: 0.5rem;
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--accent1-color);
     justify-self: center;
 }
 
