@@ -224,12 +224,13 @@ h2{
 }
 
 .intro p,
-.form p {
+.form p{
     font-size: 1.5rem;
     color: var(--primary-color);
 }
 
-.intro h1 {
+.intro h1,
+.purpose h2 {
     color: var(--primary-color);
 }
 
@@ -469,7 +470,8 @@ button:focus{
     width: 16rem;
     justify-self: center;
     align-self: start;
-    font-family: "Open Sans", serif, bold;
+    font-family: "Open Sans", serif;
+    font-weight: bold;
 }
 
 .explore:hover,
@@ -482,13 +484,19 @@ button:focus{
 .homeform {
     grid-template-columns: 1fr;
     max-width: 590px;
-    margin: 0 auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     background-color: var(--accent1-color);
+}
+
+.homeform h2 {
+    color: var(--secondary-color);
+    margin: 1rem;
 }
 
 form.homeform {
     border: 5px solid var(--primary-color);
-    grid-template-rows: 2fr 3fr 3fr 1.5fr;
+    grid-template-rows: 2fr 2fr 2fr 1.5fr;
 }
 
 .username.homeform {
@@ -523,11 +531,33 @@ form.homeform {
 
 .offerings,
 .purpose {
-    display:grid;
+    display: grid;
     grid-template-rows: 260px 4rem 1fr;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.offerings{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 5px solid var(--accent1-color);
 }
 
 .offerings p {
     grid-row: 3/4;
     grid-column: 1/2;
+    color: var(--secondary-color);
+    margin: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.purpose {
+    background-color: var(--secondary-color);
+    border: 5px solid var(--primary-color);
+}
+
+.purpose p {
+    margin: 1.5rem;
+    color: var(--primary-color);
+    font-size: 1.3rem;
 }
