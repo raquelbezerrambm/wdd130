@@ -618,3 +618,30 @@ form.homeform {
     margin-top: 0;
 }
 
+.table {
+    background-color: var(--accent1-color);
+    margin: 1rem;
+    border: 5px solid var(--primary-color);
+}
+
+table {
+    border-collapse: collapse;
+    border: 3px solid var(--primary-color);
+    font-family: "Open Sans", serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin: 1rem;
+}
+
+caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid var(--primary-color);
+    padding: 8px 10px;
+    background-color: var(--secondary-color);
+}
