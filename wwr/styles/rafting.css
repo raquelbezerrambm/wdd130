@@ -699,3 +699,4 @@ tbody th {
 .tripscall a:focus {
     background: var(--primary-color);
     color: var(--secondary-color);
+}
