@@ -618,11 +618,17 @@ form.homeform {
     color: var(--secondary-color)
 }
 
+.tablecall {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 .table {
     background-color: var(--secondary-color);
     margin: 1rem;
     border: 5px solid var(--primary-color);
-    grid-column: 2/3;
+    grid-column: 1/2;
 }
 
 table {
@@ -657,3 +663,39 @@ tbody th {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
 }
+
+.tripscall {
+    grid-row: 2/3;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--accent1-color);
+    margin: 1rem;
+    padding: 1rem;
+    border: 5px solid var(--primary-color);
+}
+
+.tripscall h2 {
+    font-size: 6rem;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--secondary-color);
+    align-self: end;
+    margin-bottom: 10px;
+}
+
+.tripscall a{
+    justify-self: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 3rem;
+    width: 19rem;
+    margin-top: 3rem;
+    padding: 1rem
+}
+
+.tripscall a:hover,
+.tripscall a:focus {
+    background: var(--primary-color);
+    color: var(--secondary-color);
