@@ -574,16 +574,14 @@ form.homeform {
 
 .tripsgrid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.3fr;
 }
 
 .tripsinfo{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
-    border: 5px solid var(--primary-color);
     margin: 1rem;
-    padding: 1rem;
 }
 
 .info {
@@ -591,22 +589,23 @@ form.homeform {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     border: 5px solid var(--accent1-color);
-    margin: 1rem;
+    background-color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .info img {
     width: 15rem;
     order: -1;
     padding: 2px;
-    margin: 10px;
-    border: 3px solid var(--accent1-color);
+    margin: 1rem;
+    border: 3px solid var(--secondary-color);
     justify-self: end; 
     align-self: center;
 }
 
 .info h2{
-    color: var(--primary-color);
-    margin: 1px;
+    color: var(--secondary-color);
+    margin: 1rem;
     justify-self: start;
     align-self: center;
 }
@@ -616,12 +615,14 @@ form.homeform {
     font-size: 1.5rem;
     justify-self: center;
     margin-top: 0;
+    color: var(--secondary-color)
 }
 
 .table {
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
     margin: 1rem;
     border: 5px solid var(--primary-color);
+    grid-column: 2/3;
 }
 
 table {
@@ -637,6 +638,7 @@ caption {
     caption-side: top;
     padding: 10px;
     font-weight: bold;
+    color: var(--primary-color);
 }
 
 th,
@@ -644,4 +646,14 @@ td {
     border: 1px solid var(--primary-color);
     padding: 8px 10px;
     background-color: var(--secondary-color);
+}
+
+thead th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+tbody th {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
 }
